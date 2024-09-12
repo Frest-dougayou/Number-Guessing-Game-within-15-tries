@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game: within 15 tries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Number Guessing Game: within 15 tries</h2>
+        <h1 id="question">質問：あなたが考えている数字は <span id="guess"></span> 以上ですか？</h1>
+        <div id="buttons">
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+        </div>
+        <p id="result"></p>
+        <input type="button" value="最初から遊ぶ" id="reset"></input>
+
+        <div id="question-count-text">この質問は<span id="question-count">0</span>回目の質問です</div>
+        <div id="answer-count"></div>
+
+        <footer id="instruction">
+            <div class="explanation">説明書</div>
+            <div class="explanation">①「0~10000」の中で好きな数字を1つ選んでください</div>
+            <div class="explanation">②下に表示される質問にボタンで回答してください</div>
+            <div class="explanation">※15回以内の質問で必ず正しい答えを求めます</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

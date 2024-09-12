@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    /*width: 80%;/*ブラウザウインドウの80%にする*/
+}
+
+.container {/*白い枠はこれ*/
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;/*中央に寄せる*/
+    min-width: 850px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.text{
+    font-size: large;
+    font-weight: 400;
+}
+
+#buttons {
+    margin-top: 10px;
+}
+
+button {/*htmlの公式のタグ*/
+    height: 50px;
+    padding: 14px 25px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    margin: 0px 5px;/*0 auto の中央寄せ以外はpxで縦横に指定する*/
+}
+
+button:hover {/*hoverはマウスカーソルをそこに置いたときの変更*/
+    background-color: #0056b3;/*濃いめの青にしてる*/
+}
+
+#result {
+    display: none;/*プログラム開始時にnoneにできる、visibility: hidden;だとスペース保持したまま文字とかだけ消せる。このdisplay="none"に対してjavaの .style.display で変更できる、あとjavascriptみたいに""はいらないので注意 一応javascriptでも関数とかで入れずに普通に書けば初期化はできる、cssの方がわかりやすい感じはするけど*/
+    /*margin-top: 20px;*/
+    font-size: 50px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;/*marginを0に設定すると、段落の上下にデフォルトで設定されている余白がなくなります。*/
+}
+
+#reset{
+    margin: 10px;
+}
+
+#instruction{
+    background-color: #d4d4d4;
+    margin-top: 10px;
+    font-size:20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
